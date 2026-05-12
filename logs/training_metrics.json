@@ -1,19 +1,19 @@
 {
-  "final_train_loss": 0.013483379781246186,
-  "best_val_loss": 1.7176637649536133,
+  "final_train_loss": 0.013445188105106354,
+  "best_val_loss": 1.759186029434204,
   "total_steps": 60,
   "train_losses": [
-    1.7264244079589843,
-    0.390267539024353,
-    0.14993445873260497,
-    0.06986824274063111,
-    0.03192553818225861,
-    0.013483379781246186
+    1.7289840698242187,
+    0.39512851238250735,
+    0.15352869033813477,
+    0.07131851315498353,
+    0.032300344109535216,
+    0.013445188105106354
   ],
   "eval_losses": [
-    1.8787952661514282,
-    1.7220118045806885,
-    1.7176637649536133
+    1.9062767028808594,
+    1.759186029434204,
+    1.761502981185913
   ],
   "hyperparameters": {
     "base_model": "/kaggle/input/models/google/gemma-4/transformers/gemma-4-e4b-it/1",
@@ -41,8 +41,8 @@
     "optimizer": "adamw_8bit"
   },
   "training_stats": {
-    "runtime_seconds": 1044.5776,
-    "samples_per_second": 0.477,
+    "runtime_seconds": 1311.1735,
+    "samples_per_second": 0.38,
     "total_train_samples": 166,
     "total_val_samples": 21
   }
