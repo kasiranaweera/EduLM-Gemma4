@@ -1,0 +1,18 @@
+{
+  "total_samples": 208,
+  "subjects": [
+    "mathematics",
+    "science",
+    "technology"
+  ],
+  "total_topics": 13,
+  "ils_profiles": 16,
+  "ils_dimensions": [
+    "Active/Reflective (processing)",
+    "Sensing/Intuitive (perception)",
+    "Visual/Verbal (input)",
+    "Sequential/Global (understanding)"
+  ],
+  "response_variants_per_topic": 4,
+  "format": "chat messages with system/user/assistant roles"
+}

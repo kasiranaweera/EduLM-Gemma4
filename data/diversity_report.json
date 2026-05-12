@@ -1,0 +1,196 @@
+{
+  "project": "EduLM-Gemma4",
+  "version": "1.0.0",
+  "created_by": "Notebook 1 \u2014 Dataset Engineering",
+  "hackathon": "Kaggle Gemma 4 Good Hackathon 2026",
+  "generation_method": "programmatic-template-expansion",
+  "base_model_for_finetune": "google/gemma-4-e4b-it",
+  "splits": {
+    "train": {
+      "split": "train",
+      "total_samples": 166,
+      "subject_dist": {
+        "mathematics": 61,
+        "science": 56,
+        "technology": 49
+      },
+      "topic_dist": {
+        "Probability and Statistics": 13,
+        "Photosynthesis": 14,
+        "How Machine Learning Works": 13,
+        "Artificial Intelligence and Large Language Models": 11,
+        "Trigonometry Basics": 14,
+        "Python Programming Fundamentals": 12,
+        "Quadratic Equations": 12,
+        "DNA and Genetics": 13,
+        "Linear Algebra \u2014 Matrices": 10,
+        "Newton's Laws of Motion": 14,
+        "Derivatives and Differentiation": 12,
+        "Chemical Bonding": 15,
+        "Computer Networks and the Internet": 13
+      },
+      "ils_processing": {
+        "Reflective": 70,
+        "Balanced(Active/Reflective)": 23,
+        "Active": 73
+      },
+      "ils_perception": {
+        "Sensing": 83,
+        "Intuitive": 83
+      },
+      "ils_input": {
+        "Verbal": 70,
+        "Balanced(Visual/Verbal)": 12,
+        "Visual": 84
+      },
+      "ils_understanding": {
+        "Global": 75,
+        "Balanced(Sequential/Global)": 23,
+        "Sequential": 68
+      },
+      "style_key_dist": {
+        "RSVeG": 23,
+        "BIViB": 12,
+        "RIVeG": 23,
+        "AIViS": 22,
+        "ASViG": 22,
+        "ASViS": 22,
+        "RSVeS": 5,
+        "RIVeS": 19,
+        "BSViB": 11,
+        "AIViG": 7
+      },
+      "avg_response_len_chars": 1162.4,
+      "unique_topics": 13,
+      "unique_ils_styles": 10
+    },
+    "val": {
+      "split": "val",
+      "total_samples": 21,
+      "subject_dist": {
+        "science": 6,
+        "technology": 9,
+        "mathematics": 6
+      },
+      "topic_dist": {
+        "Photosynthesis": 2,
+        "Artificial Intelligence and Large Language Models": 4,
+        "Probability and Statistics": 2,
+        "Python Programming Fundamentals": 2,
+        "Quadratic Equations": 1,
+        "Trigonometry Basics": 1,
+        "How Machine Learning Works": 2,
+        "Chemical Bonding": 1,
+        "Linear Algebra \u2014 Matrices": 2,
+        "Newton's Laws of Motion": 1,
+        "Computer Networks and the Internet": 1,
+        "DNA and Genetics": 2
+      },
+      "ils_processing": {
+        "Active": 9,
+        "Reflective": 10,
+        "Balanced(Active/Reflective)": 2
+      },
+      "ils_perception": {
+        "Intuitive": 9,
+        "Sensing": 12
+      },
+      "ils_input": {
+        "Visual": 10,
+        "Verbal": 10,
+        "Balanced(Visual/Verbal)": 1
+      },
+      "ils_understanding": {
+        "Global": 9,
+        "Sequential": 10,
+        "Balanced(Sequential/Global)": 2
+      },
+      "style_key_dist": {
+        "AIViG": 3,
+        "RSVeS": 4,
+        "BSViB": 1,
+        "ASViS": 3,
+        "RIVeG": 2,
+        "ASViG": 3,
+        "RIVeS": 3,
+        "BIViB": 1,
+        "RSVeG": 1
+      },
+      "avg_response_len_chars": 1177.3,
+      "unique_topics": 12,
+      "unique_ils_styles": 9
+    },
+    "test": {
+      "split": "test",
+      "total_samples": 21,
+      "subject_dist": {
+        "mathematics": 13,
+        "science": 2,
+        "technology": 6
+      },
+      "topic_dist": {
+        "Linear Algebra \u2014 Matrices": 4,
+        "Derivatives and Differentiation": 4,
+        "Quadratic Equations": 3,
+        "Newton's Laws of Motion": 1,
+        "How Machine Learning Works": 1,
+        "DNA and Genetics": 1,
+        "Artificial Intelligence and Large Language Models": 1,
+        "Python Programming Fundamentals": 2,
+        "Computer Networks and the Internet": 2,
+        "Probability and Statistics": 1,
+        "Trigonometry Basics": 1
+      },
+      "ils_processing": {
+        "Reflective": 11,
+        "Active": 9,
+        "Balanced(Active/Reflective)": 1
+      },
+      "ils_perception": {
+        "Intuitive": 12,
+        "Sensing": 9
+      },
+      "ils_input": {
+        "Verbal": 11,
+        "Visual": 10
+      },
+      "ils_understanding": {
+        "Sequential": 13,
+        "Global": 7,
+        "Balanced(Sequential/Global)": 1
+      },
+      "style_key_dist": {
+        "RIVeS": 4,
+        "RSVeS": 4,
+        "ASViS": 1,
+        "AIViS": 4,
+        "AIViG": 3,
+        "RSVeG": 2,
+        "ASViG": 1,
+        "RIVeG": 1,
+        "BSViB": 1
+      },
+      "avg_response_len_chars": 1127.5,
+      "unique_topics": 11,
+      "unique_ils_styles": 9
+    }
+  },
+  "summary": {
+    "total_samples": 208,
+    "subjects": [
+      "mathematics",
+      "science",
+      "technology"
+    ],
+    "total_topics": 13,
+    "ils_profiles": 16,
+    "ils_dimensions": [
+      "Active/Reflective (processing)",
+      "Sensing/Intuitive (perception)",
+      "Visual/Verbal (input)",
+      "Sequential/Global (understanding)"
+    ],
+    "response_variants_per_topic": 4,
+    "format": "chat messages with system/user/assistant roles"
+  }
+}
