@@ -1,0 +1,49 @@
+{
+  "final_train_loss": 0.013305248320102691,
+  "best_val_loss": 1.7059475183486938,
+  "total_steps": 60,
+  "train_losses": [
+    1.7263679504394531,
+    0.3894235610961914,
+    0.15212513208389283,
+    0.07155230641365051,
+    0.032243776321411136,
+    0.013305248320102691
+  ],
+  "eval_losses": [
+    1.9048229455947876,
+    1.7059475183486938,
+    1.7088196277618408
+  ],
+  "hyperparameters": {
+    "base_model": "/kaggle/input/models/google/gemma-4/transformers/gemma-4-e4b-it/1",
+    "max_seq_len": 2048,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "use_rslora": true,
+    "epochs": 3,
+    "lr": 0.0002,
+    "lr_scheduler": "cosine",
+    "warmup_ratio": 0.05,
+    "per_device_batch": 2,
+    "grad_accum": 4,
+    "weight_decay": 0.01,
+    "optimizer": "adamw_8bit"
+  },
+  "training_stats": {
+    "runtime_seconds": 1196.6217,
+    "samples_per_second": 0.416,
+    "total_train_samples": 166,
+    "total_val_samples": 21
+  }
+}
