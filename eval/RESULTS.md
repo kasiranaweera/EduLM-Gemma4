@@ -1,14 +1,14 @@
 # Evaluation Results
  
-## vs Baseline (gemma-4-e4b-it, no fine-tuning)
+## EduLM-Gemma4 vs Gemma4 (gemma-4-e4b-it, no fine-tuning)
  
-| Metric | Baseline | EduGemma4 | Δ |
+| Metric | Gemma4 | EduLM-Gemma4 | Δ |
 |--------|----------|-----------|---|
-| ROUGE-1 | 0.2877 | 0.4103 | +0.1226 |
-| ROUGE-2 | 0.0512 | 0.1002 | +0.0490 |
-| ROUGE-L | 0.1239 | 0.2051 | +0.0812 |
-| BERTScore F1 | 0.7703 | 0.7920 | +0.0217 |
-| Hallucination Rate | 0.0159 | 0.0317 | --0.0158 |
-| ILS Adaptation | 0.6437 | 0.5865 | +-0.0572 |
+| ROUGE-1 | 0.2909 | 0.4181 | +0.1272 |
+| ROUGE-2 | 0.0510 | 0.1059 | +0.0549 |
+| ROUGE-L | 0.1291 | 0.2269 | +0.0978 |
+| BERTScore F1 | 0.7706 | 0.7966 | +0.0260 |
+| Hallucination Rate | 0.0317 | 0.0317 | -0.0000 |
+| ILS Adaptation | 0.6619 | 0.5651 | +-0.0968 |
  
 ![Evaluation Dashboard](evaluation_dashboard.png)

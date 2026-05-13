@@ -1,41 +1,41 @@
 {
-  "model": "EduGemma4 (gemma-4-e4b-it + LoRA r=16)",
+  "model": "EduLM-Gemma4 (gemma-4-e4b-it + LoRA r=16)",
   "eval_samples": 21,
   "metrics": {
     "rouge": {
       "baseline": {
-        "rouge1": 0.2877,
-        "rouge2": 0.0512,
-        "rougeL": 0.1239
+        "rouge1": 0.2909,
+        "rouge2": 0.051,
+        "rougeL": 0.1291
       },
       "finetuned": {
-        "rouge1": 0.4103,
-        "rouge2": 0.1002,
-        "rougeL": 0.2051
+        "rouge1": 0.4181,
+        "rouge2": 0.1059,
+        "rougeL": 0.2269
       }
     },
     "bertscore": {
       "baseline": {
-        "precision": 0.7607,
-        "recall": 0.7804,
-        "f1": 0.7703
+        "precision": 0.7597,
+        "recall": 0.7821,
+        "f1": 0.7706
       },
       "finetuned": {
-        "precision": 0.7903,
-        "recall": 0.7941,
-        "f1": 0.792
+        "precision": 0.7967,
+        "recall": 0.7969,
+        "f1": 0.7966
       }
     },
     "hallucination": {
       "baseline": {
         "malformed_tag_rate": 0.0476,
         "subject_drift_rate": 0.0,
-        "empty_tag_body_rate": 0.0,
-        "overall_hallucination_rate": 0.0159,
+        "empty_tag_body_rate": 0.0476,
+        "overall_hallucination_rate": 0.0317,
         "counts": {
           "malformed_tags": 1,
           "subject_drifts": 0,
-          "empty_tag_bodies": 0,
+          "empty_tag_bodies": 1,
           "total_samples": 21
         }
       },
@@ -54,23 +54,23 @@
     },
     "ils_adaptation": {
       "baseline": {
-        "mean_ils_adaptation": 0.6437,
-        "pct_fully_adapted": 0.381,
-        "pct_partially_adapted": 0.5714,
+        "mean_ils_adaptation": 0.6619,
+        "pct_fully_adapted": 0.4286,
+        "pct_partially_adapted": 0.5238,
         "pct_not_adapted": 0.0476
       },
       "finetuned": {
-        "mean_ils_adaptation": 0.5865,
+        "mean_ils_adaptation": 0.5651,
         "pct_fully_adapted": 0.3333,
-        "pct_partially_adapted": 0.619,
-        "pct_not_adapted": 0.0476
+        "pct_partially_adapted": 0.5714,
+        "pct_not_adapted": 0.0952
       }
     }
   },
   "summary": {
-    "rouge1_improvement": 0.1226,
-    "bertscore_f1_improvement": 0.0217,
-    "hallucination_reduction": -0.0158,
-    "ils_adaptation_gain": -0.0572
+    "rouge1_improvement": 0.1272,
+    "bertscore_f1_improvement": 0.026,
+    "hallucination_reduction": 0.0,
+    "ils_adaptation_gain": -0.0968
   }
 }
