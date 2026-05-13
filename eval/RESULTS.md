@@ -4,11 +4,11 @@
  
 | Metric | Baseline | EduGemma4 | Δ |
 |--------|----------|-----------|---|
-| ROUGE-1 | 0.2820 | 0.4154 | +0.1334 |
-| ROUGE-2 | 0.0511 | 0.1072 | +0.0561 |
-| ROUGE-L | 0.1310 | 0.2162 | +0.0852 |
-| BERTScore F1 | 0.7710 | 0.7978 | +0.0268 |
-| Hallucination Rate | 0.0159 | 0.0476 | --0.0317 |
-| ILS Adaptation | 0.5865 | 0.5325 | +-0.0540 |
+| ROUGE-1 | 0.2877 | 0.4103 | +0.1226 |
+| ROUGE-2 | 0.0512 | 0.1002 | +0.0490 |
+| ROUGE-L | 0.1239 | 0.2051 | +0.0812 |
+| BERTScore F1 | 0.7703 | 0.7920 | +0.0217 |
+| Hallucination Rate | 0.0159 | 0.0317 | --0.0158 |
+| ILS Adaptation | 0.6437 | 0.5865 | +-0.0572 |
  
 ![Evaluation Dashboard](evaluation_dashboard.png)
